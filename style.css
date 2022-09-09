@@ -1,0 +1,72 @@
+/* GLOBAL GRID AND VARIABLES */
+
+:root {
+    --main-color: #1d90d3;
+    --light-bg: #e0e0e0;
+    --clear-window: #fff;
+    --accent-color: #e4c518;
+    --dark-text: #202020;
+}
+
+img {
+    height: 1rem;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--light-bg);
+}
+
+/* SIDEBAR MENU */
+
+.sidebar {
+    background-color: var(--main-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.sidebar .logo {
+    color: var(--clear-window);
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.2rem;
+}
+.logo span svg {
+    height: 1.8rem;
+}
+
+.sidebar svg {
+    height: 1rem;
+    fill: var(--clear-window);
+}
+
+.navLinks a {
+    color: var(--clear-window);
+    text-decoration: none;
+}
+
+#settingsLink {
+    margin-top: 1.4rem;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* TOP HEADER BOX */
+
+
