@@ -8,10 +8,6 @@
     --dark-text: #202020;
 }
 
-img {
-    height: 1rem;
-}
-
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -31,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    grid-row: 1 / -1;
 }
 
 .sidebar .logo {
@@ -69,4 +66,107 @@ body {
 
 /* TOP HEADER BOX */
 
+.notificationBell svg {
+    height: 1.6rem;
+    fill: var(--dark-text);
+}
 
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+.searchBar input {
+    width: 25vw;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--light-bg);
+    height: 2rem;
+    padding: 1rem;
+}
+
+.searchBar label svg {
+    height: 1.6rem;
+    fill: var(--dark-text);
+}
+
+.profilePic {
+    background-image: url(./images/fox.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.topHeader {
+    grid-row: 1 / 2;
+    background-color: var(--clear-window);
+    color: var(--dark-text);
+    padding: 1rem 2rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.topHeader .firstLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.profilePicBig {
+    background-image: url(./images/fox.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+
+.topHeader .secondLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greeting p {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.greeting h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.secondLine button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 0.4rem 1.6rem;
+    border-radius: 28px;
+    color: var(--clear-window);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.secondLine .greetProfile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerButtons {
+    display: flex;
+    gap: 1rem;
+}
