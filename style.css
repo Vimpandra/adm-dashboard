@@ -17,7 +17,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
     height: 100vh;
     padding: 0;
     margin: 0;
@@ -75,6 +75,7 @@ body {
 .notificationBell svg {
     height: 1.6rem;
     fill: var(--dark-text);
+    margin-right: 2rem;
 }
 
 .searchBar {
@@ -82,7 +83,7 @@ body {
     align-items: flex-end;
 }
 .searchBar input {
-    width: 25vw;
+    width: 30vw;
     border-radius: 16px;
     border: none;
     background-color: var(--light-bg);
@@ -111,9 +112,10 @@ body {
     padding: 1rem 2rem; 
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: 1rem;
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
 }
 
 .topHeader .firstLine {
@@ -121,7 +123,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 10vw;
 }
 
 .userProfile {
@@ -184,14 +185,14 @@ body {
 .mainContent {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-auto-rows: auto;
+    grid-template-rows: 1fr 1fr;
     margin-bottom: 2rem;
     margin-right: 1rem;
 }
 
 .mainContent h2 {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.4rem;
 }
 
 /* YOUR PROJECTS SECTION */
